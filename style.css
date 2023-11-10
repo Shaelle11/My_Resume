@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article{
+    width: 80%;
+    margin:20px auto ;
+   
+}
+
+article .header{
+   padding: 1rem;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    background-color: rgb(124, 62, 152);
+    display: flex;
+justify-content: space-around;
+    position: relative;
+}
+
+header .image{
+    width: 130px;
+    height: 170px;
+    border-radius: 30%;
+    position: absolute;
+    border: 5px solid white;
+    top: 65px;
+    left: 85px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
+cursor: pointer;
+transition: .9s;
+user-select: none;
+filter: grayscale(100%);
+
+}
+header .image:hover{
+    filter: grayscale(0%);
+transform: scale(1.10);
+box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
+}
+
+.title{
+    width: 60%;
+    color: white;
+    margin-left: auto;
+    
+}
+ .title h1{
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.title p{
+    font-size: 1rem;
+    color: rgb(65, 33, 80);
+}
+.content{
+display: flex;
+flex-wrap: wrap;
+
+
+}
+.content-left{
+    width: 30%;
+    background-color:rgb(65, 33, 80);
+   text-align: center;
+   
+}
+.contact{
+    color: white;
+    margin-top: 7rem;
+}
+.contenttitle{
+    display: flex;
+    justify-content: space-around; 
+}
+.contentp{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact span{
+    border-left: 1px solid;
+   
+}
+.content-right{
+    width: 70%;
+}
