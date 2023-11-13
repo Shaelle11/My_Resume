@@ -15,20 +15,20 @@ article .header{
     width: 100%;
     height: 150px;
     align-items: center;
-    background-color: rgb(124, 62, 152);
+    background-color: rgb(227, 207, 230);
     display: flex;
 justify-content: space-around;
     position: relative;
 }
 
 header .image{
-    width: 130px;
-    height: 170px;
+    width: 9rem;
+    height: 12rem;
     border-radius: 30%;
     position: absolute;
     border: 5px solid white;
-    top: 65px;
-    left: 85px;
+    top: 3rem;
+    left: 5rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .5);
 cursor: pointer;
 transition: .9s;
@@ -44,14 +44,21 @@ box-shadow: 3px 3px 20px rgba(0, 0, 0, .5);
 
 .title{
     width: 60%;
-    color: white;
     margin-left: auto;
     
 }
  .title h1{
     font-size: 1.5rem;
+    color: rgb(8, 8, 8);
     font-weight: normal;
+    transition-duration: 1.5s;
 }
+.title h1:hover{
+    font-size: 2rem;
+    color:rgb(60, 39, 63) ;
+    transition-duration: 1.5s;
+}
+
 
 .title p{
     font-size: 1rem;
@@ -64,16 +71,17 @@ flex-wrap: wrap;
 
 }
 .content-left{
-    width: 30%;
-    background-color:rgb(65, 33, 80);
+    width:30%;
+   background-color: rgb(66, 24, 85);
    text-align: center;
    
 }
 .contact{
-    color: white;
+    color: rgb(227, 207, 230);
     margin-top: 7rem;
 }
 .contenttitle{
+    margin-top: 1rem;
     display: flex;
     justify-content: space-around; 
 }
@@ -85,6 +93,65 @@ flex-wrap: wrap;
     border-left: 1px solid;
    
 }
+.content-right{
+    width: 70%;
+}
+.skills{
+    margin-top: 1.5rem;
+   
+}
+.skills h4{
+    margin-top: 1rem;
+    font-weight: bold;
+    color: rgb(227, 207, 230);
+
+}
+.skills h5{
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(227, 207, 230);
+
+}
+.bars{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 10px;
+    padding: 0 10px;
+
+}
+.bars .bar p{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(227, 207, 230);
+
+}
+.bar span{
+    display: block;
+width: 100%;
+height: 10px;
+background-color: rgb(227, 207, 230);
+margin-top: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+position: relative;
+}
+.bar span::before{
+position: absolute;
+content: "";
+width: 80%;
+height: 80%;
+background-color:  rgb(66, 24, 85);
+top: 50%;
+left: 2px;
+transform: translateY(-50%);
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+
+
+
 .content-right{
     width: 70%;
 }
